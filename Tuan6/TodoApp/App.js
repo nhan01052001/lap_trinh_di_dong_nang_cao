@@ -29,6 +29,10 @@ export default function App() {
   const [nameToDo, setNameToDo] = useState("");
   const [course, setCourse] = useState([]);
 
+  function alert(item) {
+    Alert.alert(item.nameToDo);
+  }
+
   const handleUpLoad = useCallback(async () => {
     setCourse(DATA);
   }, []);

@@ -10,9 +10,9 @@ import {
   ImageBackground,
 } from "react-native";
 
-const Course = ({ inforCourse }) => {
+const Course = ({ inforCourse, onPress }) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <View style={styles.left}>
         <Text style={{ fontSize: 24, fontWeight: "900" }}>
           {inforCourse.id}
@@ -22,6 +22,7 @@ const Course = ({ inforCourse }) => {
         <Text style={{ fontSize: 24, fontWeight: "700" }}>
           {inforCourse.nameToDo}
         </Text>
+        <Text style={{ fontSize: 24, fontWeight: "700" }}>123456</Text>
       </View>
     </TouchableOpacity>
   );
